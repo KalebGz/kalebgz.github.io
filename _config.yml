@@ -21,7 +21,7 @@
 title: Kaleb Gezahegn
 email: kaleb.gezahegn@yale.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi! My name is Kaleb and I'm a senior at Yale University studying Electrical Engineering and Computer Science. I have some research experience in Robotics and hope to do contining on this field by working in industy upon graduation.
+  Hi! My name is Kaleb and I'm a senior at Yale University studying Electrical Engineering and Computer Science. I have some research experience in Robotics and hope to continue progress in this field by working in industy upon graduation.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
