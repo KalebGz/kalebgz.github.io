@@ -524,7 +524,7 @@ body {
     padding: 40px 20px;
   }
 }
-.the-pug {
+.avatar {
   margin-bottom: 20px;
 }
 
@@ -570,9 +570,9 @@ h2 {
   color: #b8d8d5;
 }
 
-.the-pug {
+.avatar {
   width: 320px;
-  height: 342px;
+  height: 322px;
 }
 
 .secondary-content {
