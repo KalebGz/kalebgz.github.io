@@ -600,4 +600,24 @@ h2 {
   white-space: nowrap;
 }
 
+/* Custom CSS */
+
+#topBtn {
+position: fixed;
+  bottom: 100px;
+  right: 200px;
+border-radius: 5px;
+}
+.Btn:hover {
+  background-color: #000000a8; /* Add a dark-grey background on hover */
+}
+
+#homeBtn {
+  position: fixed;
+    top: 100px;
+    left: 200px;
+  border-radius: 5px;
+}
+
+
 /*# sourceMappingURL=application.css.map */
