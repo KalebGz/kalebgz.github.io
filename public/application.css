@@ -516,7 +516,7 @@ body {
 }
 
 .inner-container {
-  padding: 30px 20px 30px;
+  padding: 40px 20px 70px;
 }
 
 @media only screen and (max-width: 40rem) {
@@ -524,7 +524,7 @@ body {
     padding: 40px 20px;
   }
 }
-.avatar {
+.the-pug {
   margin-bottom: 20px;
 }
 
@@ -570,9 +570,9 @@ h2 {
   color: #b8d8d5;
 }
 
-.avatar {
+.the-pug {
   width: 320px;
-  height: 322px;
+  height: 342px;
 }
 
 .secondary-content {
