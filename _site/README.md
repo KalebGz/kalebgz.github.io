@@ -1,34 +1,24 @@
-# henrik.nyh.se
-
-Static HTML site.
 
 
 ## Development
 
-Install dependencies (once):
-
+1. install jekyll and bundler
 ```
-bundle
+gem install jekyll bundler
 ```
-
-CSS is being generated from SCSS (Sass). To automatically convert SCSS on edit, run this in a separate (tmux) window:
-
+2. create new site
 ```
-script/watch
+jekyll new {sitename}
 ```
-
-If something doesn't appear to work, watch that window for errors and warnings.
-
-The content is in a `public` directory to work with [Pow](http://pow.cx) for local development.
-
-Or just do this in an macOS terminal:
+3. enter directory
 ```
-open public/index.html
+cd {sitename}
 ```
+4. test site locally
+```
+bundle exec jekyll serve
+```
+5. navigate to http://localhost:4000 in preferred browser
 
 
-## Production
 
-Push to deploy on Netlify.
-
-This also converts SCSS to CSS, whether or not you've already done so locally.
