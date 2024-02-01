@@ -524,7 +524,7 @@ body {
     padding: 40px 20px;
   }
 }
-.the-pug {
+.octo-cat {
   margin-bottom: 20px;
 }
 
@@ -547,6 +547,7 @@ a, b {
   font-weight: 400;
 }
 
+
 a, a:visited {
   color: #23ccbe;
   text-decoration: none;
@@ -555,6 +556,12 @@ a, a:visited {
 a:hover, a:focus {
   color: #01aa9c;
   border-color: #bbb;
+}
+
+.contact_me {
+  color: #021418;
+  text-decoration: none;
+  border-bottom: 1px solid #ededed;
 }
 
 h1 {
@@ -570,9 +577,9 @@ h2 {
   color: #b8d8d5;
 }
 
-.the-pug {
-  width: 320px;
-  height: 342px;
+.octo-cat {
+  width: 300px;
+  height: 322px;
 }
 
 .secondary-content {
