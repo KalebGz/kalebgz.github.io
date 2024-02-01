@@ -604,8 +604,8 @@ h2 {
 
 #topBtn {
 position: fixed;
-  bottom: 100px;
-  right: 200px;
+  bottom: 5%;
+  right: 5%;
 border-radius: 5px;
 }
 .Btn:hover {
@@ -614,8 +614,8 @@ border-radius: 5px;
 
 #homeBtn {
   position: fixed;
-    top: 100px;
-    left: 200px;
+    top: 5%;
+    left: 5%;
   border-radius: 5px;
 }
 
