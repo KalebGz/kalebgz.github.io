@@ -544,7 +544,7 @@ body {
 }
 
 a, b {
-  font-weight: 400;
+  font-weight: 450;
 }
 
 
@@ -562,6 +562,11 @@ a:hover, a:focus {
   color: #021418;
   text-decoration: none;
   border-bottom: 1px solid #ededed;
+}
+
+.contact_space{
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 h1 {
@@ -597,7 +602,7 @@ h2 {
 }
 
 .links {
-  font-size: 16px;
+  font-size: 20px;
   list-style-type: none;
   padding: 0;
 }
