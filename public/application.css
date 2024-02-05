@@ -549,12 +549,12 @@ a, b {
 
 
 a, a:visited {
-  color: #23ccbe;
+  color: #00810b;
   text-decoration: none;
   border-bottom: 1px solid #ededed;
 }
 a:hover, a:focus {
-  color: #01aa9c;
+  color: #6bad81;
   border-color: #bbb;
 }
 
