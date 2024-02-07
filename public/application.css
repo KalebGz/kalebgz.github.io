@@ -528,13 +528,10 @@ body {
   /* margin-bottom: 20px; */
 }
 
-.small-top-space {
-  margin-top: 30px;
+.menu-top-space {
+  margin-top: 1px;
 }
 
-.big-top-space {
-  margin-top: 45px;
-}
 
 body {
   background: #fbfbf9;
