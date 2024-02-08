@@ -672,7 +672,7 @@ figure {
   margin: auto;
   
 }
-figure, .robotimg {
+.robotfigure, .robotimg {
   width:300px ; 
   height:350px;
 }
