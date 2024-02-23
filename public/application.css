@@ -633,25 +633,44 @@ h2 {
     left: 5%;
   border-radius: 5px;
 }
-/* font and column for classes in robotics page */
-.column {
-  float: left;
-  width: 50%;
 
-}
 
-.class_grouping {
-text-align: center;
-}
-
-.right_text_col{
-  margin-left: 25%; 
+/* .row {
+  padding-bottom: 30px;
 }
 
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.column {
+  float: left;
+  width: 50%;
+} */
+
+
+ .row {
+  display: flex;
+  
+}
+
+.img_row{
+  padding: 20px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 20px;
+  /* padding-bottom: 50px; */
+}
+/* Make Columns stack when width is too small */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
 .img_column {
@@ -665,22 +684,32 @@ text-align: center;
   font-weight: bold;
 }
 
+/* .robotics_classes{
+  text-align: center;
+ } */
+
+.class_grouping, .robotics_classes {
+  text-align: center;
+}
+  
 /* figures for robot pics */
 figure {
-  border: 1px #cccccc solid;
+  /* border: 1px #cccccc solid; */
   padding: 4px;
   margin: auto;
+  /* padding-left: 200px; */
   
 }
 .robotfigure, .robotimg {
   width:300px ; 
   height:350px;
 }
+
 figcaption {
   /* background-color: black; */
   color: black;
   font-style: italic;
-  padding: 2px;
+  /* padding: 200px; */
   text-align: center;
   font-weight: bold;
 }
