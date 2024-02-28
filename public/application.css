@@ -634,7 +634,6 @@ h2 {
   border-radius: 5px;
 }
 
-
 /* .row {
   padding-bottom: 30px;
 }
@@ -660,6 +659,7 @@ h2 {
   padding: 20px;
 }
 
+
 /* Create two equal columns that sits next to each other */
 .column {
   flex: 50%;
@@ -667,7 +667,7 @@ h2 {
   /* padding-bottom: 50px; */
 }
 /* Make Columns stack when width is too small */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .column {
     width: 100%;
   }
@@ -678,20 +678,26 @@ h2 {
   width:50%;
 }
 
+#robots_div, #classes_div, #projects_div{
+  padding-top:30px;
+}
 
 .yale_classes{
-  font-size: 60%;
-  font-weight: bold;
+  /* font-size: 100%; */
+  /* font-weight: bold; */
+  /* text-align: left; */
+  padding-left: 20%;
 }
 
-/* .robotics_classes{
-  text-align: center;
- } */
 
-.class_grouping, .robotics_classes {
+.title_center_underline {
   text-align: center;
+  text-decoration: underline;
 }
   
+.title_underline {
+  text-decoration: underline;
+}
 /* figures for robot pics */
 figure {
   /* border: 1px #cccccc solid; */
