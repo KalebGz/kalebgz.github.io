@@ -715,6 +715,9 @@ h2 {
   text-align: center;
   text-decoration: underline;
 }
+.title_center {
+  text-align: center;
+}
   
 .title_underline {
   text-decoration: underline;
