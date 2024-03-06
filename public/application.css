@@ -535,24 +535,28 @@ body {
 
 body {
   background: #fbfbf9;
-  color: #330;
+  color: rgb(0, 0, 0);
   text-shadow: 1px 1px 1px #fff;
   font: 300 22px/1.5 "Source Sans Pro", sans-serif;
 }
 
-a, b {
+a, b   {
   font-weight: 450;
 }
 
-
-a, a:visited {
-  color: #00810b;
+a{
+  color: #000000f3;
   text-decoration: none;
   border-bottom: 1px solid #ededed;
 }
+
+ a:visited {
+  color: #070707;
+
+}
 a:hover, a:focus {
-  color: #6bad81;
-  border-color: #bbb;
+  color: #646568;
+  border-color: #080808;
 }
 
 .contact_me {
