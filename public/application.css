@@ -590,6 +590,11 @@ h2 {
   font-size: 18px;
 }
 
+.proj-link {
+  font-size: 18px;
+  font-weight: 300;
+}
+
 .long-content {
   text-align: left;
   font-size: 18px;

@@ -21,10 +21,12 @@
           Projects
         </h1>
 
-        <p class="secondary-content">Last updated January 2024.</p>
+        <p class="secondary-content">Last updated April 2024</p>
+        <p class="secondary-content">Click on project title to be directed to its GitHub repo</p>
 
           <ul id="menu" class="links big-top-space">
             <li class="links__link"><a href="#Robotics">Robotics</a></li>
+            <li class="links__link"><a href="#ml">Machine Learning</a></li>
             <li class="links__link"><a href="#Software">Software</a></li>
             <li class="links__link"><a href="#Publications">Publications</a></li>
             <!-- <li class="links__link"><a href="#Design">Design</a></li> -->
@@ -38,17 +40,16 @@
 
           <ul>
             <li><a href="https://github.com/KalebGz/Zip-Zap-Boing" target="_blank"> ZIP ZAP BOING </a></li>
-            
-            <p>
-              <a href="https://www.youtube.com/watch?v=Gisfcg401Ag&feature=youtu.be" target="_blank">Video Demo</a>
-              <br>
-                This was a final group project for Professor Vásquez’s class Building Interactive Machines. We used reinforcement learning to teach the robot shutter how to play Zip Zap Boing with 2 human players.
+            <a class="proj-link" href="https://www.youtube.com/watch?v=Gisfcg401Ag&feature=youtu.be" target="_blank">Video Demo</a>
+
+            <p> This was a final group project for Professor Vásquez’s class Building Interactive Machines. We used reinforcement learning to teach the robot shutter how to play Zip Zap Boing with 2 human players.
             </p>
           </ul>
 
 
           <ul>
-            <li><a href="https://github.com/KalebGz/Zombie-world" target="_blank"> Youbot Zoombie Apocolypse Robot Architecture </a></li>
+            <li><a href="https://github.com/KalebGz/Zombie-world" target="_blank"> youBot Zoombie Apocolypse Robot Simulation </a></li>
+            <a class="proj-link" href="../Youbot_state_machine.pdf" target="_blank">State Machine Diagram</a>
             <p>
                         We built an intricate finite state machine robot architecture in the webots robot
               simulator that drives a rover that uses various sensors. The integration of lidar data and a color
@@ -56,22 +57,43 @@
               environment with simulated zombies that it tries to avoid.
             </p>
           </ul>
-<!-- Software -->
-          <h2 id="Software">Software</h2>
-          
+
+
+
           <ul>
-        <li><a href="https://github.com/KalebGz/FuzzMe" target="_blank">Fuzzme</a></li>
+            <li> Building an Electrician's Robotic Assistant: Optimizing Vision for real-time Feedback</li>
+            <a class="proj-link" href="../Thesis_report.pdf" target="_blank"> Report PDF</a>
+            <p>
+              This research project focuses on two different approaches to addressing the problem of the processing bottleneck that comes with running multiple models across camera feeds capturing different angles of an environment. The first part attempts to use image stitching to combine different camera perspectives into one feed to remove the need for running the same body and face-tracking models across two different feeds. The second attempts to establish a global coordinate system using aruco codes for the two cameras. This coordinate frame would then allow the robots to run body tracking models selectively based on which feed provides the best view and easily feed it into an intention predictor upon transforming the models' landmarks.
+            </p>
+          </ul>
+
+<!-- Machine Learning  -->
+
+          <h2 id="ml">Machine Learning</h2>
+
+          <ul>
+            <li> <a href="https://github.com/serviceberry3/image_captioning" target="_blank">Modernization and Analysis of a Neural Image Captioner</a></li>
+            
+            <a class="proj-link" href="../EE439_final_report.pdf" target="_blank"> Report PDF</a>
+            <p>
+              We focus on improving the accuracy of captions for the NIC image to caption model from the paper Show and Tell: A Neural Image Caption Generator. We retrain the network from the paper using an open-source TensorFlow adaptation of their model. The bulk of our contribution is modifying the codebase so that (a) the user can optionally train on a subset of the downloaded dataset instead of the entire dataset, (b) the user can train on COCO data but can now also optionally train on the SBU caption dataset, and (c) instead of taking images from the local disk, the user can select to pull images via URL using the COCO API.
+            </p>
+          </ul>
+
+          <ul>
+            <li><a href="https://github.com/KalebGz/FuzzMe" target="_blank">Fuzzme</a></li>
             <p>
                             Fuzzme is a web app designed to protect your privacy by flooding the
               internet with images that spread false information about you. By flooding the internet
               with enough false information, it will become impossible to distinguish fact from reality.
               Your name can no longer be tainted online because we will taint it according to your
-              choosing first! At FuzzMe, we think of anonymity not as its Greek translation “no name”,
+              choosing first! At FuzzMe, we think of anonymity, not as its Greek translation “no name”,
               but rather “so many names that you might as well have none”.
             </p>
           </ul>
-
-
+    
+    
           <ul>
             <li><a href="https://github.com/KalebGz/CATFISH" target="_blank">Catfish</a></li>
             <p>
@@ -81,8 +103,12 @@
                 automatically generates, saves and opens a file that is a significantly altered yet similar
                 version of the inputted image.
             </p>
-          </ul>
+          </ul> 
 
+<!-- Software -->
+          <h2 id="Software">Software</h2>
+          
+          
 
           <ul>
             <li><a href="https://github.com/KalebGz/Skate_NH" target="_blank">Skate New Haven Website</a></li>
@@ -97,14 +123,13 @@
             <li>Dayveloper</li>
 
             <p>
-              
               <a href="https://github.com/KalebGz/DayVeloper--frontend" target="_blank">Frontend </a>
               |
               <a href="https://github.com/KalebGz/DayVeloper--backend" target="_blank">Backend</a>
             </p>
             <p>
                             Dayveloper is a web app that uses widget-like modules to create a hub for
-              recurring google searches like the weather while also acting as a space to build routines
+              recurring Google searches like the weather while also acting as a space to build routines
               like a widget designed for improving one’s vocabulary.
             </p>
           </ul>
@@ -114,7 +139,7 @@
             <li><a href="https://github.com/KalebGz/Workout-Manager" target="_blank">Workout manager</a></li>
             <p>
                             This is a web app designed to organize and track workouts that I built with a
-              partner for the Flatiron Full stack web development class.
+              partner for the Flatiron full-stack web development class.
             </p>
           </ul>
 
@@ -168,17 +193,30 @@
 
 <!-- Misc -->
           <h2 id="Misc">Misc</h2>
-          <p>random projects</p>        
-          <ul>
-            <li>Motorized Shopping Cart</li>
-            <p>
-              <a href="https://drive.google.com/file/d/1ylwZNUqlo0eSTcIItSlnjxzuKaQ1jhna/view" target="_blank">Video Demo</a>
-              <br>
+          <!-- <p>random projects</p>         -->
 
+
+          <ul>
+            <li><a href="https://github.com/KalebGz/Sleep-Safe" target="_blank">SleepSafe</a> </li>
+            <p>
+              <a class="proj-link" href="projects/sleepsafe.html" target="_blank">Project Page</a>
+              |
+              <a class="proj-link" href="../images/sleepsafe_poster.png" target="_blank">Poster</a>
+              <br>
+            </p>
+            <p>
+              SleepSafe is a product designed to provide a simple solution to noise complaints in shared living spaces. Through the use of Arduinos, a digital sound sensor, bluetooth modules and led indicators, SleepSafe allows for ambient noise sensing  along with manual triggers to notify friends and family of noise disturbances.
             </p>
           </ul>
 
 
+          <ul>
+            <li>Motorized Shopping Cart</li>
+            <a class="proj-link" href="https://drive.google.com/file/d/1ylwZNUqlo0eSTcIItSlnjxzuKaQ1jhna/view" target="_blank">Video Demo</a>
+            <p>
+              We converted an abandoned shopping cart into a motorized cart by mounting and powering 2 cim motors onto a custom welded frame. We then connected the motors to a power distrubution board and electronic speed controllers powered by a 12v battery and used potenitometers to enable differential drive for steering.
+            </p>
+          </ul>
 
 
         <!-- <ul class="links big-top-space">
