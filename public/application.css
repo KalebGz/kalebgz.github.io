@@ -527,7 +527,7 @@ a, b {
 a {
   color: rgba(0, 0, 0, 0.9529411765);
   text-decoration: none;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #c8c8c8;
 }
 a:visited {
   color: #070707;
@@ -540,7 +540,7 @@ a:hover, a:focus {
 .contact_me {
   color: #021418;
   text-decoration: none;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #c8c8c8;
 }
 
 h1 {
