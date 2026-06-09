@@ -27,8 +27,8 @@ audio,
 canvas,
 video {
   display: inline-block;
-  display: inline;
-  zoom: 1;
+  *display: inline;
+  *zoom: 1;
 }
 
 /**
@@ -58,12 +58,9 @@ audio:not([controls]) {
  *    user zoom.
  */
 html {
-  font-size: 100%;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
+  font-size: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
 }
 
 /**
@@ -201,7 +198,7 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
+  _font-family: "courier new", monospace;
   font-size: 1em;
 }
 
@@ -226,7 +223,7 @@ q {
  */
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -299,10 +296,8 @@ nav ol {
  * 2. Improve image quality when scaled in IE 7.
  */
 img {
-  border: 0;
-  /* 1 */
-  -ms-interpolation-mode: bicubic;
-  /* 2 */
+  border: 0; /* 1 */
+  -ms-interpolation-mode: bicubic; /* 2 */
 }
 
 /**
@@ -347,13 +342,10 @@ fieldset {
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
 legend {
-  border: 0;
-  /* 1 */
+  border: 0; /* 1 */
   padding: 0;
-  white-space: normal;
-  /* 2 */
-  margin-left: -7px;
-  /* 3 */
+  white-space: normal; /* 2 */
+  *margin-left: -7px; /* 3 */
 }
 
 /**
@@ -366,14 +358,10 @@ button,
 input,
 select,
 textarea {
-  font-size: 100%;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-  vertical-align: baseline;
-  /* 3 */
-  vertical-align: middle;
-  /* 3 */
+  font-size: 100%; /* 1 */
+  margin: 0; /* 2 */
+  vertical-align: baseline; /* 3 */
+  *vertical-align: middle; /* 3 */
 }
 
 /**
@@ -406,15 +394,12 @@ select {
  *    Known issue: inner spacing remains in IE 6.
  */
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */
-  overflow: visible;
-  /* 4 */
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+  *overflow: visible; /* 4 */
 }
 
 /**
@@ -431,16 +416,12 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-  height: 13px;
-  /* 3 */
-  width: 13px;
-  /* 3 */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+  *height: 13px; /* 3 */
+  *width: 13px; /* 3 */
 }
 
 /**
@@ -448,12 +429,10 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
+input[type=search] {
+  -webkit-appearance: textfield; /* 1 */
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
+  -webkit-box-sizing: content-box; /* 2 */
   box-sizing: content-box;
 }
 
@@ -461,8 +440,8 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -480,10 +459,8 @@ input::-moz-focus-inner {
  * 2. Improve readability and alignment in all browsers.
  */
 textarea {
-  overflow: auto;
-  /* 1 */
-  vertical-align: top;
-  /* 2 */
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
 }
 
 /* ==========================================================================
@@ -524,33 +501,36 @@ body {
     padding: 40px 20px;
   }
 }
-
-
 .menu-top-space {
   margin-top: 1px;
 }
 
+.small-top-space {
+  margin-top: 30px;
+}
+
+.big-top-space {
+  margin-top: 45px;
+}
 
 body {
   background: #fbfbf9;
-  color: rgb(0, 0, 0);
+  color: #000;
   text-shadow: 1px 1px 1px #fff;
   font: 300 22px/1.5 "Source Sans Pro", sans-serif;
 }
 
-a, b   {
+a, b {
   font-weight: 450;
 }
 
-a{
-  color: #000000f3;
+a {
+  color: rgba(0, 0, 0, 0.9529411765);
   text-decoration: none;
   border-bottom: 1px solid #ededed;
 }
-
- a:visited {
+a:visited {
   color: #070707;
-
 }
 a:hover, a:focus {
   color: #646568;
@@ -562,11 +542,6 @@ a:hover, a:focus {
   text-decoration: none;
   border-bottom: 1px solid #ededed;
 }
-
-/* .p_container {
-  position: relative;
-
-} */
 
 h1 {
   font-size: 30px;
@@ -616,45 +591,35 @@ h2 {
   white-space: nowrap;
 }
 
-/* Custom CSS */
-
 #topBtn {
   position: fixed;
-    bottom: 5%;
-    left: 5%;
+  bottom: 5%;
+  left: 5%;
   border-radius: 5px;
 }
+
 .Btn:hover {
-  background-color: #000000a8; /* Add a dark-grey background on hover */
+  background-color: rgba(0, 0, 0, 0.6588235294);
 }
 
 #backBtn {
   position: fixed;
-    top: 5%;
-    left: 5%;
+  top: 5%;
+  left: 5%;
   border-radius: 5px;
 }
 
-/* Showing label on home page images  */
 .tooltip {
   position: relative;
   display: inline-block;
-  padding-left: 8px ;
+  padding-left: 8px;
   height: 30px;
-  
 }
 
- .tooltiptext {
+.tooltiptext {
   visibility: hidden;
   width: 100px;
-  /* background-color: #3ba24431; */
   color: #000000;
-  /* text-align: center; */
-  /* border-radius: 20%; */
-  /* padding: 5px ; */
-
-  /* Position the tooltip */
-  /* position: absolute; */
   z-index: 1;
 }
 
@@ -662,92 +627,65 @@ h2 {
   visibility: visible;
 }
 
-/* .row {
-  padding-bottom: 30px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 50%;
-} */
-
-
- .row {
+.row {
   display: flex;
-  
 }
 
-.img_row{
+.img_row {
   padding: 20px;
 }
 
-
-/* Create two equal columns that sits next to each other */
 .column {
   flex: 50%;
   padding: 20px;
-  /* padding-bottom: 50px; */
 }
-/* Make Columns stack when width is too small */
+
 @media screen and (max-width: 800px) {
   .column {
     width: 100%;
   }
 }
-
 .img_column {
   float: left;
-  width:50%;
+  width: 50%;
 }
 
-#robots_div, #classes_div, #projects_div{
-  padding-top:30px;
+#robots_div, #classes_div, #projects_div {
+  padding-top: 30px;
 }
 
-.yale_classes{
-  /* font-size: 100%; */
-  /* font-weight: bold; */
-  /* text-align: left; */
+.yale_classes {
   padding-left: 20%;
 }
-
 
 .title_center_underline {
   text-align: center;
   text-decoration: underline;
 }
+
 .title_center {
   text-align: center;
 }
-  
+
 .title_underline {
   text-decoration: underline;
 }
-/* figures for robot pics */
+
 figure {
-  /* border: 1px #cccccc solid; */
   padding: 4px;
   margin: auto;
-  /* padding-left: 200px; */
-  
 }
+
 .robotfigure, .robotimg {
-  width:300px ; 
-  height:350px;
+  width: 300px;
+  height: 350px;
 }
 
 figcaption {
-  /* background-color: black; */
   color: black;
   font-style: italic;
-  /* padding: 200px; */
   text-align: center;
   font-weight: bold;
 }
+
 /*# sourceMappingURL=application.css.map */

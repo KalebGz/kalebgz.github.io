@@ -1,0 +1,9 @@
+{
+  "name": "kalebgez-github-io",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "build:css": "npx sass --style expanded sass/application.scss public/application.css",
+    "watch:css": "npx sass --style expanded --watch sass/application.scss:public/application.css"
+  }
+}
