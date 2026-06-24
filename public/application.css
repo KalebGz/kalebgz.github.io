@@ -607,18 +607,6 @@ h2 {
   margin: 0 48px;
   position: relative;
 }
-.links-icons .tooltip {
-  height: auto;
-  padding-left: 0;
-}
-.links-icons .tooltiptext {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 8px;
-  z-index: 2;
-}
 
 .links-nav {
   margin-top: 20px;
@@ -658,6 +646,27 @@ h2 {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.links-icons .links__link.tooltip {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: auto;
+  padding-left: 0;
+}
+
+.links-icons .tooltiptext {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+  z-index: 2;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .row {
