@@ -46,6 +46,7 @@ h2 {
 .index_graphic {
   width: 300px;
   height: 322px;
+  margin-top: 8px;
 }
 
 .secondary-content {
@@ -78,4 +79,39 @@ h2 {
     margin: 0 10px;
     white-space: nowrap;
   }
+}
+
+.links-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+  padding-bottom: 28px;
+
+  .links__link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 48px;
+    position: relative;
+  }
+
+  .tooltip {
+    height: auto;
+    padding-left: 0;
+  }
+
+  .tooltiptext {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 8px;
+    z-index: 2;
+  }
+}
+
+.links-nav {
+  margin-top: 20px;
 }
